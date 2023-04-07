@@ -6,6 +6,7 @@ import org.junit.runners.Parameterized;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 @RunWith(Parameterized.class)
@@ -26,6 +27,6 @@ public class IngredientTypeParamTest {
 
     @Test
     public void values() {
-        assertThat(IngredientType.valueOf(type), is(notNullValue()));
+        assertNotNull(IngredientType.valueOf(type));
     }
 }
