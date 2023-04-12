@@ -8,8 +8,8 @@ import java.util.List;
  */
 public class Database {
 
-    private final List<Bun> buns = new ArrayList<>();
-    private final List<Ingredient> ingredients = new ArrayList<>();
+    protected final List<Bun> buns = new ArrayList<>();
+    protected final List<Ingredient> ingredients = new ArrayList<>();
 
     public Database() {
         buns.add(new Bun("black bun", 100));
